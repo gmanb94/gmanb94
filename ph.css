@@ -1,0 +1,242 @@
+@media only screen and (min-width: 576px) and (max-width: 775px) {
+  html {
+    font-size: 12px;
+  }
+
+  .navbar {
+    height: 7vh;
+  }
+  #nav_logo {
+    width: 12%;
+    /* height: 150%; */
+    height: 140%;
+    margin-top: -7px;
+    margin-right: auto;
+  }
+  #truck_hero_img {
+    /* position: absolute;
+    top: 15%; */
+    width: 65%;
+    height: 60vh;
+    margin-left: -10px;
+    margin-top: 9%;
+    z-index: 2;
+    animation-delay: 0.85s;
+  }
+
+  #hero {
+    /* position: fixed; */
+    /* background-color: black; */
+    /* height: 60vh; */
+    /* width: 100%; */
+    /* top: 10vh; */
+    /* height: 80vh; */
+    z-index: 1;
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-direction: row-reverse; */
+    /* margin-bottom: 20rem; */
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  #black_stripe {
+    background-color: black;
+    position: absolute;
+    height: 35%;
+    width: 100%;
+    top: 28%;
+    display: flex;
+    /* align-items: flex-end; */
+    flex-direction: row-reverse;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  #hero h1 {
+    z-index: 2;
+    padding-right: 12%;
+    text-align: left;
+    color: #ffc303;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 6rem;
+    width: 20%;
+  }
+  /* #menu_section {
+    height: 47vh;
+  } */
+
+  #menu_section {
+    margin-top: 10rem;
+    width: 100%;
+    background-color: black;
+    z-index: 2;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #ffc303;
+    display: block;
+    position: relative;
+    z-index: 2;
+    /* margin-bottom: 500px; */
+    /* change this for medium screens, causing overflow */
+    height: auto;
+    padding-top: 10%;
+  }
+
+  #menu_section h2 {
+    font-size: 4rem;
+    margin-top: 2.5rem;
+  }
+
+  #menu_section p {
+    font-size: 1.5rem;
+    font-family: "Roboto";
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  #menu_text {
+    width: 100%;
+    padding: 0.2rem;
+    text-align: center;
+    /* padding: 30px; */
+    /* margin-bottom: 5rem; */
+  }
+
+  #menu_image_1 {
+    /* display: none; */
+    width: 70%;
+    display: block;
+    margin: auto;
+    border: 2px solid #ffc303;
+    padding: 15px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* margin: auto; */
+    /* object-fit: cover; */
+    /* height: 5000px; */
+    /* height: 50%;
+  margin-top: 50px;
+  margin-right: 50px; */
+  }
+
+  .link_container {
+    margin-bottom: 7vh;
+  }
+
+  #menu_header {
+    margin-bottom: 0;
+  }
+
+  #menu_text p {
+    margin-top: 0;
+  }
+  #menu_link {
+    margin-top: 0;
+  }
+
+  #services_section::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(assets/service_bg_s.jpeg);
+  }
+
+  #services_section {
+    height: 60vh;
+  }
+
+  #contact_form_section {
+    margin-top: 10px;
+    /* height: 50vh; */
+  }
+}
+
+@media only screen and (min-width: 776px) and (max-width: 1025px) {
+  html {
+    font-size: 10px;
+  }
+
+  .navbar {
+    height: 15vh;
+  }
+
+  #nav_logo {
+    width: 8%;
+    /* height: 150%; */
+    height: 140%;
+    margin-top: -7px;
+    margin-right: auto;
+  }
+
+  #truck_hero_img {
+    /* position: absolute;
+      top: 15%; */
+    width: 60%;
+    height: 110vh;
+    /* margin-left: -10px; */
+    margin-top: 0%;
+    z-index: 2;
+    animation-delay: 0.85s;
+  }
+
+  #hero {
+    /* position: fixed; */
+    /* background-color: black; */
+    /* height: 60vh; */
+    /* width: 100%; */
+    /* top: 10vh; */
+    /* height: 80vh; */
+    z-index: 1;
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-direction: row-reverse; */
+    /* margin-bottom: 20rem; */
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  #black_stripe {
+    background-color: black;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    top: 38%;
+    display: flex;
+    /* align-items: flex-end; */
+    flex-direction: row-reverse;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  #hero h1 {
+    z-index: 2;
+    padding-right: 8%;
+    text-align: left;
+    color: red;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 6rem;
+    width: 20%;
+  }
+  /* #menu_section {
+      height: 47vh;
+    } */
+
+  #menu_header {
+    margin-bottom: 0;
+  }
+
+  #menu_text p {
+    margin-top: 0;
+  }
+  #menu_link {
+    margin-top: 0;
+  }
+
+  .link_container {
+    display: block;
+    margin-bottom: 70vh;
+  }
+
+  #services_section::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(assets/service_bg_s.jpeg);
+  }
+}

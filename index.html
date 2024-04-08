@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>The Snack Truck</title>
+    <link rel="icon" type="image/png" href="assets/logo1.JPG" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+    <body>
+      <nav class="navbar">
+        <a href="#hero" id="nav_logo"><img src="assets/logo1.JPG" /></a>
+        <ul id="nav_list">
+          <li id="closeIcon"><img src="assets/close.png" /></li>
+          <li><a href="#hero">HOME</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="#services_section">SERVICES</a></li>
+          <li><a href="#contact_form_section">CONTACT</a></li>
+        </ul>
+        <img src="assets/nav_menu.png" id="nav_menu_icon" />
+      </nav>
+      <div id="scroll_wrapper">
+      <main>
+        <section id="hero">
+          <img
+            src="assets/truck_landing_r.png"
+            id="truck_hero_img"
+            class="animate__animated animate__slideInLeft"
+            alt="Picture of the snack truck"
+          />
+          <div id="black_stripe" class="animate__animated animate__fadeInRight">
+            <h1>
+              THE <br />
+              SNACK <br />TRUCK
+            </h1>
+          </div>
+        </section>
+        <section id="menu_section">
+          <img
+            src="assets/image_1_r.jpeg"
+            id="menu_image_1"
+            class="animate__animated"
+          />
+          <div id="menu_text">
+            <h2 id="menu_header" class="animate__animated section_header">
+              QUICK CONVENIENCE 
+            </h2>
+            <p class="animate__animated fade_in_text">
+              The Snack Truck is the convenient way to bring the convenience store directly to you. From tasty snacks and refreshing drinks to our unique daily special combos, we offer a diverse selection of great items. View our menu below to get a taste of what we have to offer. 
+            </p>
+            <div class="link_container">
+              <a
+                href="./menu.html"
+                id="menu_link"
+                class="button_styling animate__animated fade_in_text"
+                >VIEW MENU</a
+              >
+            </div>
+            <!-- <button id="view_menu_button">View Menu</button> -->
+          </div>
+        </section>
+        <section id="services_section">
+          <div id="services_section_text">
+            <h2 id="test" class="animate__animated section_header">SERVICES</h2>
+            <p class="animate__animated fade_in_text">
+              We currently serve the Flowery Branch, Buford, Gainesville, and Greater Northeastern Atlanta areas and can help provide you with great snacking options for: 
+            </p>
+            <ul>
+              <li>Breakfast</li>
+              <li>Lunch</li>
+              <li>Corporate Events</li>
+              <li>Special Events</li>
+            </ul>
+            <p class="animate__animated fade_in_text">
+              We also can help you feed any size crowd with our box lunch catering options (minimum 30 per order). 
+            </p>
+            <div class="link_container">
+              <a
+                href="./menu.html"
+                id="box_menu_link"
+                class="button_styling animate__animated fade_in_text"
+                >BOX LUNCH MENU</a
+              >
+            </div>
+
+          </div>
+        </section>
+        <section id="contact_form_section">
+          <h2 id="contact_header" class="animate__animated section_header">
+            CONTACT
+          </h2>
+          <p id="contact_text" class="animate__animated fade_in_text">
+            Questions about our truck and services? Interested in booking the truck for Lunch, Breakfast, or a Special/Corporate Event? Don't hesitate to contact us today by phone, email, or the form below.
+            
+          </p>
+          <form
+            id="contact_form"
+            action=""
+            method="post"
+            class="animate__animated fade_in_text"
+          >
+            <label for="client_name">Name</label>
+            <input type="text" id="client_name" name="client_name" class="form_input" /><br />
+            <label for="organization">Organization*</label>
+            <input type="text" id="organization" name="organization" class="form_input" /><br />
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" class="form_input" /><br />
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" class="form_input" /><br />
+            <label for="service">Interest</label>
+            <select name="service" id="service" class="form_input" >
+                <option value="lunch">Lunch</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunchbox">Lunch box delivery</option>
+                <option value="event">A Special Event</option>
+                <option value="other">Other</option>
+            </select>     <br />
+            <label for="start">Date*</label>
+            <input type="date" id="event_date" name="start" class="form_input" />  <br />
+
+            <label for="location">Location</label>
+            <input type="text" id="location_input" name="location" class="form_input" />  <br />
+
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" class="form_input"  placeholder="Please add any extra details, requests, or questions" rows="7" cols="40"></textarea>   
+            <p id="optional">*OPTIONAL</p>
+            <div id="button_holder">  
+            <input type="submit" id="submit_button">
+          </div>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <script>
+          const createObservers = () => {
+          let hObserver = new IntersectionObserver((entries, observer) => {
+            entries
+              .filter((e) => e.isIntersecting)
+              .forEach((entry) => {
+                entry.target.classList.add("animate__fadeInUp");
+                observer.unobserve(entry.target);
+              });
+          });
+
+          let pObserver = new IntersectionObserver((entries, observer) => {
+            entries
+              .filter((e) => e.isIntersecting)
+              .forEach((entry) => {
+                entry.target.classList.add("animate__fadeIn");
+                observer.unobserve(entry.target);
+              });
+          });
+
+          let iObserver = new IntersectionObserver((entries, observer) => {
+            entries
+              .filter((e) => e.isIntersecting)
+              .forEach((entry) => {
+                entry.target.style.visibility = "visible";
+                entry.target.classList.add("animate__backInRight");
+                observer.unobserve(entry.target);
+              });
+          });
+
+          document.querySelectorAll(".section_header").forEach((e) => {
+            hObserver.observe(e);
+          });
+
+          document.querySelectorAll(".fade_in_text").forEach((e) => {
+            pObserver.observe(e);
+          });
+
+          document.querySelectorAll("#menu_image_1").forEach((e) => {
+            iObserver.observe(e);
+          });
+
+          document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+              e.preventDefault();
+              document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth",
+              });
+            });
+          });
+          };
+
+          //move to onload
+          createObservers();
+
+          localStorage.setItem("menuStatus", "regular");
+
+          //menu on click
+          const navMenu = document.querySelector("#nav_menu_icon");
+          const closeMenu = document.querySelector("#closeIcon");
+
+          const toggleSidebar = () => {
+          let sideMenu = document.querySelector("#nav_list");
+          sideMenu.classList.toggle("active");
+          };
+
+          navMenu.addEventListener("click", toggleSidebar);
+          closeMenu.addEventListener("click", toggleSidebar);
+
+          document.body.addEventListener("click", (event) => {
+          let sideMenu = document.querySelector("#nav_list");
+          if (!navMenu.contains(event.target) && !sideMenu.contains(event.target)) {
+            sideMenu.classList.remove("active");
+          }
+          });
+
+          const boxMenuLink = document.querySelector("#box_menu_link");
+
+          boxMenuLink.addEventListener("click", (event) => {
+          localStorage.setItem("menuStatus", "box");
+          });
+        </script>
+      </footer>
+    </body>
+  </div>
+</html>

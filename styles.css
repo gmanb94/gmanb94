@@ -1,0 +1,1537 @@
+html {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  /* height: auto;
+  width: 100%; */
+  margin: 0;
+  padding: 0;
+  background-color: #ffc303;
+  /* font-size: 16px; */
+  overflow-x: hidden;
+  /* font-size: 62.5%; */
+}
+
+#top {
+  position: absolute;
+  top: -10px;
+}
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: flex-end; */
+  /* margin-bottom: 10px; */
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  height: 12vh;
+  width: 100%;
+  z-index: 3;
+}
+
+.navbar ul {
+  list-style: none;
+  text-align: center;
+  width: 40%;
+  /* margin: 0; */
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  /* bottom: 0; */
+  margin-bottom: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  /* font-size: 22px; */
+  font-size: 1.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar a:hover {
+  color: #ffc303;
+}
+
+#nav_logo {
+  width: 8%;
+  /* height: 150%; */
+  height: 140%;
+  margin-top: -7px;
+  margin-right: auto;
+}
+
+#nav_logo img {
+  width: 100%;
+  height: 100%;
+}
+
+#nav_menu_icon {
+  display: none;
+}
+
+#closeIcon {
+  display: none;
+}
+
+#truck_hero_img {
+  /* position: absolute; */
+  width: 60%;
+  height: 95vh;
+  margin-left: -10px;
+  z-index: 2;
+  animation-delay: 0.85s;
+}
+
+#hero {
+  /* position: fixed; */
+  /* background-color: black; */
+  /* height: 60vh; */
+  /* width: 100%; */
+  /* top: 10vh; */
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: row-reverse; */
+  /* margin-bottom: 20rem; */
+  align-items: flex-start;
+  width: 100%;
+}
+
+#black_stripe {
+  background-color: black;
+  position: absolute;
+  height: 60%;
+  width: 100%;
+  top: 30%;
+  display: flex;
+  /* align-items: flex-end; */
+  flex-direction: row-reverse;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+#hero h1 {
+  /* position: relative; */
+  z-index: 2;
+  padding-right: 5%;
+
+  text-align: left;
+  color: #ffc303;
+  /* font-size: 96px; */
+  /* text-align: right; */
+  /* padding-top: 9%; */
+  /* padding-left: 10%; */
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 6rem;
+  width: 20%;
+  /* padding-left: 10vw; */
+  /* padding-bottom: 20vh; */
+  /* margin-top: 8rem; */
+  /* margin-bottom: 2rem; */
+}
+
+h2 {
+  font-size: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+#menu_section {
+  height: 100vh;
+  margin-top: 10rem;
+  width: 100%;
+  background-color: black;
+  z-index: 2;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #ffc303;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  z-index: 2;
+}
+
+#menu_section h2 {
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+
+#menu_section p {
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  animation-duration: 2s;
+}
+
+#menu_text {
+  width: 50%;
+  padding: 5rem;
+  text-align: center;
+  /* margin-bottom: 5rem; */
+}
+
+#menu_image_1 {
+  width: 50%;
+  object-fit: cover;
+  animation-duration: 1.5s;
+  /* height: 5000px; */
+  /* height: 50%;
+  margin-top: 50px;
+  margin-right: 50px; */
+}
+
+.link_container {
+  width: 100%;
+  text-align: center;
+}
+
+.button_styling {
+  /* font: bold 11px Arial; */
+  display: inline-block;
+  font-size: 1.5rem;
+  text-align: center;
+  /* width: auto; */
+  /* align-items: center; */
+  text-decoration: none;
+  background-color: black;
+  color: #ffc303;
+  padding: 8px 10px 8px 10px;
+  border: 5px solid #ffc303;
+  animation-duration: 2s;
+}
+
+.button_styling:hover {
+  background-color: #ffc303;
+  color: black;
+  font-weight: bold;
+  /* border-color: black; */
+}
+
+#menu_link {
+  margin-top: 2rem;
+}
+
+#services_section {
+  z-index: 1;
+  position: relative;
+  /* height: 100vh; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+#services_section::before {
+  content: "";
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(assets/service_bg_r.jpeg); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(assets/service_bg_c.jpg);
+  /* background-image: url(assets/IMG_2036.jpeg); */
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.9;
+}
+
+#services_section_text {
+  margin-top: 4rem;
+  position: relative;
+  color: #ffc303;
+  text-align: center;
+  /* background-color: black; */
+  /* font-size: 8rem; */
+  /* line-height: 0.9; */
+  width: 60%;
+  /* opacity: 0.5; */
+  /* text-align: center; */
+}
+
+#services_section h2 {
+  /* position: relative;
+  color: #ffc303;
+  font-size: 8rem;
+  line-height: 0.9;
+  text-align: center; */
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+}
+
+#services_section p {
+  /* position: relative;
+  width: 50%;
+  color: #ffc303;
+  font-size: 1rem;
+  line-height: 0.9;
+  text-align: center; */
+  margin-top: 0px;
+  font-size: 1.75rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#services_section ul {
+  /* position: relative;
+  width: 50%;
+  color: #ffc303;
+  font-size: 1rem;
+  line-height: 0.9;
+  text-align: center; */
+  /* width: 20%; */
+  text-align: center;
+  /* text-align: left; */
+}
+
+#services_section li {
+  /* position: relative;
+  width: 50%;
+  color: #ffc303;
+  font-size: 1rem;
+  line-height: 0.9;
+  text-align: center; */
+  list-style: none;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+  /* text-align: left; */
+}
+
+#box_menu_link {
+  /* font: bold 11px Arial; */
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5rem;
+  /* text-align: center; */
+  text-decoration: none;
+  background-color: #ffc303;
+  color: black;
+  padding: 8px 10px 8px 10px;
+  /* border: 5px solid black; */
+  animation-duration: 2s;
+  margin-bottom: 10%;
+}
+#box_menu_link:hover {
+  background-color: #ffc303;
+  color: black;
+  font-weight: bold;
+}
+.overlay {
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 15;
+}
+
+#contact_form_section {
+  /* height: 500px; */
+  color: black;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  /* height: 500px; */
+  background-color: #ffc303;
+  padding-top: 1rem;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  width: 75%;
+  margin: auto;
+}
+
+#contact_form_section h2 {
+  font-size: 4rem;
+  margin-bottom: 0rem;
+  /* margin-top: 10rem; */
+  font-weight: bold;
+}
+
+#contact_form_section p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+#contact_form {
+  text-align: left;
+  /* color: red; */
+  align-self: center;
+  /* margin-bottom: 8rem; */
+}
+
+.form_input {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5rem;
+  margin-left: 15rem;
+  margin-bottom: 1rem;
+  border: 1.5px solid black;
+  width: 72%;
+}
+
+#contact_form label {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  position: absolute;
+}
+/* #contact_form input {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5rem;
+  margin-left: 15rem;
+  margin-bottom: 1rem;
+  border: 1.5px solid black;
+
+  width: 72%;
+} */
+
+#contact_form select {
+  width: 73%;
+}
+/* 
+#contact_form textarea {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5rem;
+  margin-left: 15rem;
+  margin-bottom: 1rem;
+  width: 72%;
+  border: 1.5px solid black;
+} */
+
+p#optional {
+  font-weight: bold;
+  margin: none;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+
+#button_holder {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+#submit_button {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  /* text-align: center; */
+  background-color: #ffc303;
+  color: black;
+  padding: 8px 10px 8px 10px;
+  border: 5px solid black;
+  /* text-align: center; */
+  margin: auto;
+  width: 35%;
+}
+
+#submit_button:hover {
+  background-color: black;
+  color: #ffc303;
+  padding: 8px 10px 8px 10px;
+  border: 5px solid #ffc303;
+  cursor: pointer;
+}
+
+#menu_img {
+  width: 75%;
+  /* margin-top: 1rem; */
+}
+
+#lunch_box_menu {
+  background-color: black;
+  width: 75%;
+  margin: auto;
+  /* display: flex; */
+}
+
+#box_top {
+  display: flex;
+}
+
+#box_header {
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 0px;
+  line-height: 5.25rem;
+  text-align: left;
+  color: #ffc303;
+  font-size: 5rem;
+  font-family: "Roboto Condensed", sans-serif;
+  width: 20%;
+}
+
+#box_logo {
+  /* transform: scale(0.85, 0.85); */
+  width: 35%;
+  height: 10%;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+
+#disclaimer {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  margin-left: 10%;
+  text-align: left;
+}
+
+#box_menu_main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: white;
+  margin-bottom: 5%;
+}
+
+.menu_item {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  /* margin-right: 42px; */
+  margin-right: 5%;
+}
+
+.menu_text {
+  text-align: left;
+  width: 70%;
+  font-family: "Roboto", sans-serif;
+}
+
+.main_item {
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+}
+
+.sub_items {
+  list-style: none;
+  font-size: 1.15rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+  line-height: 1.25rem;
+  padding-left: 1rem;
+}
+
+.sub_items li {
+  margin-bottom: 0.25rem;
+}
+
+.menu_price {
+  font-style: italic;
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+#menu_main {
+  display: block;
+  text-align: center;
+}
+
+#button_bar {
+  padding-top: 2rem;
+  width: 30%;
+  margin: auto;
+  display: inline-flex;
+  /* justify-content: space-evenly; */
+  /* margin-bottom: 100px; */
+  /* padding-bottom: 105px; */
+  height: 10vh;
+}
+
+.menu_button {
+  font-family: "Roboto Condensed", sans-serif;
+  /* font-weight: bold; */
+  border: 5px solid black;
+  background-color: #ffc303;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  /* padding: 8px 10px 8px 10px; */
+  margin-right: 5rem;
+  font-size: 1.5vw;
+  height: 60%;
+  white-space: nowrap;
+  line-height: 60%;
+  /* display: block; */
+}
+
+.menu_button:hover {
+  /* font: bold 11px Arial; */
+  /* text-align: center; */
+  /* width: auto; */
+  /* align-items: center; */
+  background-color: black;
+  color: #ffc303;
+  /* border: 15px solid black; */
+}
+
+.menu_button.active {
+  color: #ffc303;
+  background-color: black;
+  color: #ffc303;
+  /* border: 15px solid black; */
+}
+
+.animate__animated.animate__fadeInRight {
+  --animate-duration: 1.2s;
+}
+
+.section_header {
+  opacity: 0;
+}
+
+.fade_in_text {
+  opacity: 0;
+}
+
+#menu_image_1 {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 300px) {
+  html {
+    font-size: 1px;
+  }
+
+  body {
+    /* height: 100%;
+    width: 100%; */
+    /* margin: 0;
+    padding: 0;
+    background-color: #ffc303; */
+    font-size: 12px;
+    height: 100%;
+    background-color: black;
+    /* padding: env(safe-area-inset-top) env(safe-area-inset-right)
+      env(safe-area-inset-bottom) env(safe-area-inset-left); */
+  }
+
+  #scroll_wrapper {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    /* align-items: flex-end; */
+    align-content: center;
+    align-items: center;
+    height: 8vh;
+    /* background-color: blue; */
+  }
+
+  #nav_logo {
+    width: 20%;
+    height: auto;
+    /* height: 120%; */
+    margin-top: 1.5rem;
+  }
+
+  #nav_list {
+    display: none;
+    /* display: flex; */
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    font-size: 2rem;
+    /* height: 40vh; */
+    /* display: flex; */
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 4rem;
+    margin-top: 0;
+    /* box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); */
+  }
+
+  #nav_list.active {
+    display: flex;
+  }
+
+  #nav_menu_icon {
+    display: flex;
+    align-items: flex-end;
+    height: 60%;
+    margin-right: 1rem;
+  }
+
+  #closeIcon {
+    display: flex;
+    /* height: 3vh; */
+    height: 25px;
+    width: 25px;
+    align-self: flex-end;
+    margin-right: 10px;
+    margin-bottom: 4vh;
+  }
+
+  #truck_hero_img {
+    /* position: absolute; */
+    width: 95%;
+    height: 50vh;
+    top: 15%;
+    margin-left: -10px;
+    z-index: 2;
+  }
+
+  #hero {
+    /* position: fixed; */
+    margin-top: 10%;
+    width: 100%;
+    height: 80vh;
+    /* height: 60vh; */
+    /* width: 100%; */
+    /* background-color: black; */
+    /* top: 10vh; */
+    z-index: 1;
+    display: block;
+    /* flex-direction: row-reverse; */
+  }
+
+  #black_stripe {
+    /* display: none; */
+    height: 50vh;
+    top: 50vh;
+    width: 100%;
+    z-index: -1;
+    background-color: #ffc303;
+  }
+
+  #hero h1 {
+    z-index: 2;
+    /* vertical-align: bottom; */
+    color: black;
+    /* font-size: 96px; */
+    /* text-align: right; */
+    /* padding-top: 9%; */
+    /* padding-left: 10%; */
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    width: 95%;
+    padding-bottom: 0;
+    padding-left: 0;
+    text-align: right;
+    margin-top: 20%;
+  }
+
+  #menu_section {
+    margin-top: 10rem;
+    width: 100%;
+    background-color: black;
+    z-index: 2;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #ffc303;
+    display: block;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+    /* change this for medium screens, causing overflow */
+    height: auto;
+  }
+
+  #menu_section h2 {
+    font-size: 4rem;
+    margin-top: 2.5rem;
+  }
+
+  #menu_section p {
+    font-size: 1.5rem;
+    font-family: "Roboto";
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  #menu_text {
+    width: 100%;
+    padding: 0.2rem;
+    text-align: center;
+    /* padding: 30px; */
+    /* margin-bottom: 5rem; */
+  }
+
+  #menu_image_1 {
+    /* display: none; */
+    width: 100%;
+    object-fit: cover;
+    /* height: 5000px; */
+    /* height: 50%;
+  margin-top: 50px;
+  margin-right: 50px; */
+  }
+
+  #services_section {
+    height: 75vh;
+    padding-bottom: 50px;
+  }
+
+  #services_section::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(assets/service_bg_s.jpeg);
+  }
+
+  #services_section_text {
+    width: 75%;
+  }
+
+  #contact_text {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  #contact_form_section {
+    width: 100%;
+  }
+
+  .form_input {
+    width: 45%;
+  }
+
+  #contact_form {
+    padding-left: 2vw;
+  }
+
+  #contact_form select {
+    width: 47%;
+  }
+
+  /* #menu_img {
+    width: 110%;
+    margin-top: -5%;
+  } */
+
+  #menu_img {
+    content: url("assets/snack_truck_menu_c.png");
+    width: 95%;
+    /* margin-left: -10%; */
+    /* margin-top: -5%; */
+  }
+
+  #button_bar {
+    padding-top: 4rem;
+    width: 100%;
+    /* margin: auto; */
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-bottom: 100px; */
+    /* padding-bottom: 105px; */
+    height: 5vh;
+  }
+
+  .menu_button {
+    font-family: "Roboto Condensed", sans-serif;
+    /* font-weight: bold; */
+    border: 5px solid black;
+    background-color: #ffc303;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    /* padding: 8px 10px 8px 10px; */
+    /* margin-right: 5rem; */
+    font-size: 1.25rem;
+    height: 100%;
+    margin-right: 0;
+
+    white-space: nowrap;
+    /* line-height: 90%; */
+    /* display: block; */
+  }
+
+  .menu_button {
+    border: 1px solid #ffc303;
+    background-color: black;
+    color: #ffc303;
+    border: 1px solid #ffc303;
+  }
+
+  .menu_button:hover {
+    /* font: bold 11px Arial; */
+    /* text-align: center; */
+    /* width: auto; */
+    /* align-items: center; */
+    background-color: #ffc303;
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+  }
+
+  .menu_button.active {
+    background-color: #ffc303;
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+
+    /* border: 15px solid black; */
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  html {
+    font-size: 12px;
+  }
+
+  body {
+    /* height: 100%;
+    width: 100%; */
+    /* margin: 0;
+    padding: 0;
+    background-color: #ffc303; */
+    font-size: 12px;
+    height: 100%;
+    background-color: black;
+    /* padding: env(safe-area-inset-top) env(safe-area-inset-right)
+      env(safe-area-inset-bottom) env(safe-area-inset-left); */
+  }
+
+  #scroll_wrapper {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    /* align-items: flex-end; */
+    align-content: center;
+    align-items: center;
+    height: 8vh;
+    /* background-color: blue; */
+  }
+
+  #nav_logo {
+    width: 20%;
+    height: auto;
+    /* height: 120%; */
+    margin-top: 1.5rem;
+  }
+
+  #nav_list {
+    display: none;
+    /* display: flex; */
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    font-size: 2rem;
+    /* height: 40vh; */
+    /* display: flex; */
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 5.5rem;
+    margin-top: 0;
+    /* box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); */
+  }
+
+  #nav_list.active {
+    display: flex;
+  }
+
+  #nav_menu_icon {
+    display: flex;
+    align-items: flex-end;
+    height: 60%;
+    margin-right: 1rem;
+  }
+
+  #closeIcon {
+    display: flex;
+    /* height: 3vh; */
+    /* height: 5%; */
+    width: 6vw;
+    align-self: flex-end;
+    margin-top: 8%;
+    margin-right: 8%;
+    margin-bottom: 5%;
+  }
+
+  #closeIcon img {
+    height: 100%;
+    width: 100%;
+  }
+
+  #truck_hero_img {
+    /* position: absolute; */
+    width: 95%;
+    height: 50vh;
+    top: 15%;
+    margin-left: -10px;
+    z-index: 2;
+  }
+
+  #hero {
+    /* position: fixed; */
+    margin-top: 10%;
+    width: 100%;
+    height: 80vh;
+    /* height: 60vh; */
+    /* width: 100%; */
+    /* background-color: black; */
+    /* top: 10vh; */
+    z-index: 1;
+    display: block;
+    /* flex-direction: row-reverse; */
+  }
+
+  #black_stripe {
+    /* display: none; */
+    height: 50vh;
+    top: 50vh;
+    width: 100%;
+    z-index: -1;
+    background-color: #ffc303;
+  }
+
+  #hero h1 {
+    z-index: 2;
+    /* vertical-align: bottom; */
+    color: black;
+    /* font-size: 96px; */
+    /* text-align: right; */
+    /* padding-top: 9%; */
+    /* padding-left: 10%; */
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    width: 95%;
+    padding-bottom: 0;
+    padding-left: 0;
+    text-align: right;
+    margin-top: 20%;
+  }
+
+  #menu_section {
+    margin-top: 10rem;
+    width: 100%;
+    background-color: black;
+    z-index: 2;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #ffc303;
+    display: block;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+    /* change this for medium screens, causing overflow */
+    height: auto;
+  }
+
+  #menu_section h2 {
+    font-size: 4rem;
+    margin-top: 2.5rem;
+  }
+
+  #menu_section p {
+    font-size: 1.5rem;
+    font-family: "Roboto";
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  #menu_text {
+    width: 100%;
+    padding: 0.2rem;
+    text-align: center;
+    /* padding: 30px; */
+    /* margin-bottom: 5rem; */
+  }
+
+  #menu_image_1 {
+    /* display: none; */
+    width: 100%;
+    object-fit: cover;
+    /* height: 5000px; */
+    /* height: 50%;
+  margin-top: 50px;
+  margin-right: 50px; */
+  }
+
+  #services_section {
+    /* height: 95vh; */
+    padding-bottom: 50px;
+  }
+
+  #services_section::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(assets/service_bg_s.jpeg);
+  }
+
+  #services_section_text {
+    width: 75%;
+  }
+
+  #contact_text {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  #contact_form_section {
+    width: 100%;
+  }
+
+  .form_input {
+    width: 45%;
+  }
+
+  #contact_form {
+    padding-left: 2vw;
+  }
+
+  #contact_form select {
+    width: 47%;
+  }
+
+  /* #menu_img {
+    width: 110%;
+    margin-top: -5%;
+  } */
+
+  #menu_img {
+    content: url("assets/snack_truck_menu_c.png");
+    width: 95%;
+    /* margin-left: -10%; */
+    /* margin-top: -5%; */
+  }
+
+  #button_bar {
+    padding-top: 4rem;
+    width: 100%;
+    /* margin: auto; */
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-bottom: 100px; */
+    /* padding-bottom: 105px; */
+    height: 5vh;
+  }
+
+  .menu_button {
+    font-family: "Roboto Condensed", sans-serif;
+    /* font-weight: bold; */
+    border: 5px solid black;
+    background-color: #ffc303;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    /* padding: 8px 10px 8px 10px; */
+    /* margin-right: 5rem; */
+    font-size: 1.25rem;
+    height: 100%;
+    margin-right: 0;
+
+    white-space: nowrap;
+    /* line-height: 90%; */
+    /* display: block; */
+  }
+
+  .menu_button {
+    border: 1px solid #ffc303;
+    background-color: black;
+    color: #ffc303;
+    border: 1px solid #ffc303;
+  }
+
+  .menu_button:hover {
+    /* font: bold 11px Arial; */
+    /* text-align: center; */
+    /* width: auto; */
+    /* align-items: center; */
+    background-color: #ffc303;
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+  }
+
+  .menu_button.active {
+    background-color: #ffc303;
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+
+    /* border: 15px solid black; */
+  }
+
+  #lunch_box_menu {
+    margin-top: 10%;
+    width: 80%;
+  }
+
+  #box_header {
+    margin-left: 0px;
+    margin-top: 5%;
+    margin-bottom: 0px;
+    line-height: 3.25rem;
+    text-align: left;
+    color: #ffc303;
+    font-size: 3rem;
+    font-family: "Roboto Condensed", sans-serif;
+    width: 20%;
+  }
+
+  #box_logo {
+    /* transform: scale(0.85, 0.85); */
+    width: 45%;
+    height: 10%;
+    margin-left: 35%;
+    margin-top: 5%;
+  }
+
+  #disclaimer {
+    margin-left: 0px;
+  }
+
+  #box_menu_main {
+    padding: 0px;
+  }
+
+  .menu_item {
+    width: 100%;
+  }
+
+  .main_item {
+    font-size: 1.25rem;
+  }
+
+  .sub_items {
+    list-style: none;
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+    line-height: 1.25rem;
+    padding-left: 1rem;
+  }
+
+  .sub_items li {
+    margin-bottom: 0.25rem;
+  }
+
+  .menu_price {
+    font-style: italic;
+    font-size: 1.25rem;
+    text-align: right;
+  }
+}
+
+/* ipad mini and galazy s8  green*/
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  .navbar {
+    height: 15vh;
+  }
+  #nav_logo {
+    width: 12%;
+    /* height: 150%; */
+    height: 140%;
+    margin-top: -7px;
+    margin-right: auto;
+  }
+  #truck_hero_img {
+    /* position: absolute;
+    top: 15%; */
+    width: 60%;
+    height: 95vh;
+    margin-left: -10px;
+    z-index: 2;
+    animation-delay: 0.85s;
+  }
+
+  #hero {
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  #black_stripe {
+    background-color: black;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 38%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  #hero h1 {
+    z-index: 2;
+    padding-right: 12%;
+    text-align: left;
+    color: green;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 4.5rem;
+    width: 20%;
+  }
+  /* #menu_section {
+    height: 47vh;
+  } */
+
+  /* #menu_section {
+    padding: 1rem;
+  } */
+
+  #menu_section {
+    height: auto;
+  }
+
+  #menu_header {
+    margin-bottom: 0;
+  }
+
+  #menu_text p {
+    margin-top: 0;
+    padding: 2rem;
+    padding: 0;
+  }
+  #menu_link {
+    margin-top: 0;
+  }
+
+  #services_section::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(assets/service_bg_s.jpeg);
+  }
+
+  #contact_form_section {
+    margin-top: 10px;
+    /* height: 50vh; */
+  }
+}
+
+/* iphone se */
+@media only screen and (max-width: 575px) and (max-height: 750px) {
+  #services_section {
+    height: 95vh;
+  }
+}
+
+/* mobile landscape red*/
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  html {
+    font-size: 10px;
+  }
+
+  .navbar {
+    height: 15vh;
+  }
+
+  #nav_logo {
+    width: 8%;
+    /* height: 150%; */
+    height: 140%;
+    margin-top: -7px;
+    margin-right: auto;
+  }
+
+  #truck_hero_img {
+    /* position: absolute;
+      top: 15%; */
+    width: 65%;
+    height: 110vh;
+    /* margin-left: -10px; */
+    margin-top: 0%;
+    z-index: 2;
+    animation-delay: 0.85s;
+  }
+
+  #hero {
+    /* position: fixed; */
+    /* background-color: black; */
+    /* height: 60vh; */
+    /* width: 100%; */
+    /* top: 10vh; */
+    /* height: 80vh; */
+    z-index: 1;
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-direction: row-reverse; */
+    /* margin-bottom: 20rem; */
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  #black_stripe {
+    background-color: black;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    top: 38%;
+    display: flex;
+    /* align-items: flex-end; */
+    flex-direction: row-reverse;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  #hero h1 {
+    z-index: 2;
+    padding-right: 8%;
+    text-align: left;
+    color: red;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 6rem;
+    width: 20%;
+  }
+  /* #menu_section {
+      height: 47vh;
+    } */
+
+  #menu_header {
+    margin-bottom: 0;
+  }
+
+  #menu_text p {
+    margin-top: 0;
+  }
+  #menu_link {
+    margin-top: 0;
+  }
+
+  .link_container {
+    display: block;
+  }
+
+  #services_section::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(assets/service_bg_s.jpeg);
+  }
+
+  #services_section {
+    height: auto;
+  }
+}
+
+/* ipad air and ipad pro blue*/
+@media only screen and (min-width: 768px) and (max-width: 1025px) and (orientation: portrait) {
+  html {
+    font-size: 12px;
+  }
+  body {
+    /* height: auto;
+    width: 100%; */
+    margin: 0;
+    padding: 0;
+    background-color: #ffc303;
+    /* font-size: 16px; */
+    overflow-x: hidden;
+    /* font-size: 62.5%; */
+  }
+
+  .navbar {
+    height: 8vh;
+  }
+
+  #nav_logo {
+    width: 10%;
+    /* height: 150%; */
+    height: 140%;
+    margin-top: -7px;
+    margin-right: auto;
+  }
+
+  #truck_hero_img {
+    width: 60%;
+    height: 50vh;
+    margin-top: 5%;
+    z-index: 2;
+    animation-delay: 0.85s;
+  }
+
+  #hero {
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  #black_stripe {
+    background-color: black;
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    top: 25%;
+    display: flex;
+    /* align-items: flex-end; */
+    flex-direction: row-reverse;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  #hero h1 {
+    z-index: 2;
+    padding-right: 8%;
+    text-align: left;
+    color: blue;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 6rem;
+    width: 20%;
+  }
+  /* #menu_section {
+      height: 47vh;
+    } */
+
+  #menu_section {
+    height: 45vh;
+  }
+
+  #menu_header {
+    margin-bottom: 0;
+  }
+
+  #menu_text p {
+    margin-top: 0;
+  }
+  #menu_link {
+    margin-top: 0;
+  }
+
+  .link_container {
+    display: block;
+  }
+
+  #services_section::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(assets/service_bg_s.jpeg);
+  }
+
+  #services_section {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+  #truck_hero_img {
+  }
+
+  #hero {
+  }
+
+  #black_stripe {
+  }
+
+  #hero h1 {
+    padding-right: 10%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  html {
+    font-size: 22px;
+  }
+}

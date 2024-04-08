@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <link rel="icon" type="image/png" href="assets/logo1.JPG" />
+
+    <title>The Snack Truck</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" id="nav_logo"><img src="assets/logo1.JPG" /></a>
+      <ul id="nav_list">
+        <li id="closeIcon"><img src="assets/close.png" /></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="index.html#services_section">SERVICES</a></li>
+        <li><a href="index.html#contact_form_section">CONTACT</a></li>
+      </ul>
+      <!-- /academics/page.html#timeline -->
+      <img src="assets/nav_menu.png" id="nav_menu_icon" />
+    </nav>
+    <main id="menu_main">
+      <div id="button_bar">
+        <button class="menu_button" id="reg_menu">REGULAR MENU</button>
+        <button class="menu_button" id="box_menu">BOXED LUNCH MENU</button>
+      </div>
+      <img src="assets/snack_truck_menu.jpeg" id="menu_img" />
+      <div id="lunch_box_menu">
+        <div id="box_top">
+          <h1 id="box_header">BOX LUNCH MENU</h1>
+          <img id="box_logo" src="assets/logo1_c.jpg" />
+        </div>
+        <p id="disclaimer">minimum 30 per order, priced per unit</p>
+        <div id="box_menu_main">
+          <div class="menu_item">
+            <div class="menu_text">
+              <p class="main_item">Double Cheeseburger</p>
+              <ul class="sub_items">
+                <li>Chips or Popcorn</li>
+                <li>Can Soda</li>
+                <li>Cookie or Gummies</li>
+              </ul>
+            </div>
+            <div class="menu_price">
+              <p>$10.00</p>
+            </div>
+          </div>
+          <div class="menu_item">
+            <div class="menu_text">
+              <p class="main_item">(2) Nathan's Hot Dogs</p>
+              <ul class="sub_items">
+                <li>Chips or Popcorn</li>
+                <li>Can Soda</li>
+                <li>Cookie or Gummies</li>
+              </ul>
+            </div>
+            <div class="menu_price">
+              <p>$7.00</p>
+            </div>
+          </div>
+          <div class="menu_item">
+            <div class="menu_text">
+              <p class="main_item">Chicken Salad on White Bread</p>
+              <ul class="sub_items">
+                <li>Chips or Popcorn</li>
+                <li>Can Soda</li>
+                <li>Cookie or Gummies</li>
+              </ul>
+            </div>
+            <div class="menu_price">
+              <p>$7.00</p>
+            </div>
+          </div>
+          <div class="menu_item">
+            <div class="menu_text">
+              <p class="main_item">8oz Mac and Cheese w/ Bacon</p>
+              <ul class="sub_items">
+                <li>Chips or Popcorn</li>
+                <li>Can Soda</li>
+              </ul>
+            </div>
+            <div class="menu_price">
+              <p>$7.00</p>
+            </div>
+          </div>
+          <div class="menu_item">
+            <div class="menu_text">
+              <p class="main_item">Ham & Cheese Quesadilla</p>
+              <ul class="sub_items">
+                <li>Chips or Popcorn</li>
+                <li>Can Soda</li>
+                <li>Cookie</li>
+              </ul>
+            </div>
+            <div class="menu_price">
+              <p>$8.00</p>
+            </div>
+          </div>
+          <div class="menu_item">
+            <div class="menu_text">
+              <p class="main_item">(2) Grilled Cheese</p>
+              <ul class="sub_items">
+                <li>Chips or Popcorn</li>
+                <li>Can Soda</li>
+                <li>Cookie</li>
+              </ul>
+            </div>
+            <div class="menu_price">
+              <p>$9.00</p>
+            </div>
+          </div>
+          <div class="menu_item">
+            <div class="menu_text">
+              <p class="main_item">Lasagna</p>
+              <ul class="sub_items">
+                <li>Garlic Bread</li>
+                <li>Can Soda</li>
+                <li>Brownie</li>
+              </ul>
+            </div>
+            <div class="menu_price">
+              <p>$10.00</p>
+            </div>
+          </div>
+          <div class="menu_item">
+            <div class="menu_text">
+              <p class="main_item">Sausage, Egg, and Cheese Croissant</p>
+              <ul class="sub_items">
+                <li>Orange Juice</li>
+                <li>Danish</li>
+              </ul>
+            </div>
+            <div class="menu_price">
+              <p>$10.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      const menuButtons = document.querySelectorAll(".menu_button");
+      const updateMenu = () => {
+        let menuStatus = localStorage.getItem("menuStatus");
+        let menuImage = document.querySelector("#menu_img");
+        let boxMenu = document.querySelector("#lunch_box_menu");
+        let regMenuButton = document.querySelector("#reg_menu");
+        let boxMenuButton = document.querySelector("#box_menu");
+        if (menuStatus == "box") {
+          menuImage.style.display = "none";
+          boxMenu.style.display = "inline-block";
+          boxMenuButton.classList.add("active");
+          regMenuButton.classList.remove("active");
+        } else {
+          menuImage.style.display = "inline-block";
+          boxMenu.style.display = "none";
+          regMenuButton.classList.add("active");
+          boxMenuButton.classList.remove("active");
+        }
+      };
+      updateMenu();
+
+      menuButtons.forEach((e) => {
+        let regMenuButton = document.querySelector("#reg_menu");
+        let boxMenuButton = document.querySelector("#box_menu");
+        e.addEventListener("click", (event) => {
+          // event.stopPropagation();
+          // event.preventDefault();
+          if (event.target === document.querySelector("#box_menu")) {
+            localStorage.setItem("menuStatus", "box");
+          } else {
+            localStorage.setItem("menuStatus", "regular");
+          }
+          updateMenu();
+          console.log(localStorage.getItem("menuStatus"));
+        });
+      });
+
+      const navMenu = document.querySelector("#nav_menu_icon");
+      const closeMenu = document.querySelector("#closeIcon");
+
+      const toggleSidebar = () => {
+        let sideMenu = document.querySelector("#nav_list");
+        sideMenu.classList.toggle("active");
+      };
+
+      navMenu.addEventListener("click", toggleSidebar);
+      closeMenu.addEventListener("click", toggleSidebar);
+
+      document.body.addEventListener("click", (event) => {
+        let sideMenu = document.querySelector("#nav_list");
+        if (
+          !navMenu.contains(event.target) &&
+          !sideMenu.contains(event.target)
+        ) {
+          sideMenu.classList.remove("active");
+        }
+      });
+    </script>
+    <!-- <footer><script src="main.js"></script></footer> -->
+  </body>
+</html>
